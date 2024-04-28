@@ -53,7 +53,5 @@ int main() {
 
 /*
  bubble sort 
-  worst case time complexity -> o(n)
-  
-
+  worst case time complexity -> o(n);
 */
