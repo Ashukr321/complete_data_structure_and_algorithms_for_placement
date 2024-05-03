@@ -14,8 +14,6 @@ int main(){
    omega give  the lower bound  of the algorithms 
    theta ->  average time complexity 
    this give the upper bound  and lower bound of the algorithms  
-   
-  
   */
 
   // algorithms 
