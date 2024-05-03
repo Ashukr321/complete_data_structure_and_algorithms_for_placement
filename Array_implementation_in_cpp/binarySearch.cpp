@@ -5,9 +5,8 @@ using namespace std;
 int binarySearch(int arr[], int size, int target)
 {
   int l = 0;
-  int h = size-1;
+  int h = size - 1;
 
-  
   while (l <= h)
   {
     int mid = (l + h) / 2;
@@ -46,7 +45,6 @@ int main()
     arr[i] = n;
   }
 
-
   int resultIndex = binarySearch(arr, size, target);
   if (resultIndex != -1)
   {
@@ -58,7 +56,6 @@ int main()
   }
   return 0;
 }
-
 
 /*
  binary search algorithm
