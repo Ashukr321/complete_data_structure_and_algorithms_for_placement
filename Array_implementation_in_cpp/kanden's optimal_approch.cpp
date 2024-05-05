@@ -23,6 +23,7 @@ int kadansSum(int arr[], int size)
 }
 
 // time complexity of is : o(n);
+// space complexity of the (1);
 
 // main start here ...
 int main()

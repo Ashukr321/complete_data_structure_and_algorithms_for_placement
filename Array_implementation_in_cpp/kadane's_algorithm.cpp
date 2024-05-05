@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-int kadane (int arr[],int size){
+int kadane(int arr[],int size){
   int max_sub_sum = INT_MIN;
   
   for (int i = 0; i < size; i++)
@@ -15,7 +15,6 @@ int kadane (int arr[],int size){
     if(max_sub_sum < sum){
       max_sub_sum = sum;
     }    
-    
   }
   return max_sub_sum;
 }
@@ -36,12 +35,10 @@ int main(){
     arr[i] = n;
   }
   
-
   int maxSumSubarray = kadane(arr,size);
   cout<<"the maxium sub array sum :"<<maxSumSubarray<<endl;
-  
   return 0;
-}
+} 
 
 /*
   brute force time complexity of the kadane's algorithm 
