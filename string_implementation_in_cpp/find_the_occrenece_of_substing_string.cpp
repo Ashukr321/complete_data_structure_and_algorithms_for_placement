@@ -36,5 +36,6 @@ int main()
 }
 
 /*
-  getline is use for the taking the input from the user that handle the spaces 
+  getline is use for the taking the input from the user that handle the spaces
+  time complexity of the findSubstring Occurrence  -> o(n)
 */
