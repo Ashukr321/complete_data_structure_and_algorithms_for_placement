@@ -9,7 +9,7 @@ int main()
   myMap[1] = "Ashutosh Kumar"; // Assigning a string value to the key 1
   // cout << myMap[1] << endl;
   // to insert the new key value we have to use the insert methods and also we need to be make a pair
-  
+
   myMap.insert(make_pair(2, "rahul singh"));
   // cout << myMap[2] << endl;
   // we can iterate the map 
@@ -44,4 +44,15 @@ int main()
    leaf node every leaf node is nill
    red property -> if red node has children then it must be  always black in color
    black depth properties ->
+
+
+   ⭐⭐⭐⭐⭐ map methods 
+   1.empty() : this method will check
+   2.myMap.at(2) : access the values at index : 2 
+   3.myMap.clear(): this methods clear all the  data of the  map 
+   4.myMap.size() : total number of the elements  this will give the total size of the map 
+   5. iterator : we forwarding and backward iterator 
+   6 myMap.find() : this will give the iterator of that index point 
+   7.myMap.erase () this function is use to remove the data from the  map 
+   
 */
