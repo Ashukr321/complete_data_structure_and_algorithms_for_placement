@@ -15,7 +15,7 @@ void printData(vector<int> v1)
 int main()
 {
   // vector in the cpp
-  // vector  is the dynamic  arrray
+  // vector  is the dynamic  array
   // vector<int> v1;// this is the empty vector with data type int
 
   vector<int> v1(5, 10); // size is 5 and element is assign 10 ;
@@ -44,5 +44,6 @@ int main()
   cout<<v2.back()<<endl;
   v2.clear();
   cout<<v2.capacity()<<endl;
+  cout<<v2.empty()<<endl;
   return 0;
 }

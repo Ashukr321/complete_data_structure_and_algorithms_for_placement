@@ -3,7 +3,7 @@
 using namespace std;
 
 class Node {
-  public:
+  public: // access modifier 
   int value;
   Node * next;
 
