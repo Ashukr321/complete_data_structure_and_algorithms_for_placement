@@ -57,7 +57,6 @@ void insertNodeAtPosition(Node *&head, int pos, int data)
 int main()
 {
   Node *head = NULL;
-  
   insertNodeAtPosition(head, 0, 10);
   insertNodeAtPosition(head, 1, 20);
   insertNodeAtPosition(head, 2, 50);
