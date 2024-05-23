@@ -28,7 +28,6 @@ void insertNodeAtBegin( Node * & head ,int data){
     head = newNode;
     return;
   }
-  
   newNode->next= head;
   head = newNode;
 }
@@ -41,9 +40,9 @@ void deleteAtBegin(Node *  &head ){
   Node * temp = head;
   head = head->next;
    delete temp;
-
-
 }
+
+
 //main start here ...
 int main(){
   Node * head = NULL;
@@ -54,4 +53,5 @@ int main(){
   deleteAtBegin(head);
   displayNode(head);
   return 0;
+  
 }
