@@ -12,7 +12,6 @@ int binarySearch (int arr[],int  low , int high , int target){
     return binarySearch(arr,mid +1 , high , target);
     }
     return binarySearch(arr,low,mid-1,target);
-    
   }
   return -1;
 }
