@@ -27,8 +27,6 @@ int main()
     cout << "Enter the element at index: " << i << endl;
     cin >> n;
     arr[i] = n;
-
-    
   }
 
   if (isSorted(arr, size))
