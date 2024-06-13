@@ -10,7 +10,7 @@ int arraySum(int arr[],int size){
     sum+=arr[i];
   }
   return sum;
-}
+} 
 
 //main start here ...
 int main(){
