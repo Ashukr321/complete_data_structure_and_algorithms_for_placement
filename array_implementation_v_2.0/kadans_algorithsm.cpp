@@ -52,3 +52,6 @@ int main()
 
 // what is the kadans algorithms
 // this is use for the get the maximum sub array sum of the elements
+
+
+// approach
