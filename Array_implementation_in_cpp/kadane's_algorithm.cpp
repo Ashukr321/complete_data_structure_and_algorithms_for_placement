@@ -4,7 +4,6 @@ using namespace std;
 
 int kadane(int arr[],int size){
   int max_sub_sum = INT_MIN;
-  
   for (int i = 0; i < size; i++)
   {
     int sum = 0;
