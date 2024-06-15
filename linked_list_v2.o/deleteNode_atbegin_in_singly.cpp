@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 class Node
 {
 public:
@@ -15,6 +16,7 @@ public:
   }
 };
 
+
 void displayNode(Node *head)
 {
   Node *temp = head;
@@ -24,6 +26,7 @@ void displayNode(Node *head)
     temp = temp->next;
   }
 }
+
 
 void insertNodeAtBegin(Node *&head, int data)
 {
@@ -38,6 +41,7 @@ void insertNodeAtBegin(Node *&head, int data)
   head = newNode;
 }
 
+
 void deleteNodeAtBegin( Node * &head){
   if( head ==nullptr){
     cout<<"node is already empty : "<<endl;
@@ -48,6 +52,8 @@ void deleteNodeAtBegin( Node * &head){
   head = temp ->next;
   delete temp;
 }
+
+
 // main start here ...
 int main()
 {
