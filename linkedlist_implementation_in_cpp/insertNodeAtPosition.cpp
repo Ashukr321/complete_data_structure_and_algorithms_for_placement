@@ -31,7 +31,7 @@ void displayNode(Node *head)
   }
   cout << "NULL" << endl;
 }
-void insertNodeAtPosition(Node *&head, int pos, int data)
+void insertNodeAtPosition(Node * &head, int pos, int data)
 {
   Node *newNode = new Node(data);
   if (pos == 0)
