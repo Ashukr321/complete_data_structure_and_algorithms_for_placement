@@ -79,12 +79,12 @@ int main()
 
   cout << "check linked cycle: " << endl;
   checkCycle(head);
-  cout<<endl;
+  cout << endl;
 
-  cout<<"After break the  cycle of the linked list: "<<endl;
+  cout << "After break the  cycle of the linked list: " << endl;
   brackCycle(head);
   displayNode(head);
-  cout<<endl;
+  cout << endl;
   checkCycle(head);
   return 0;
 }
