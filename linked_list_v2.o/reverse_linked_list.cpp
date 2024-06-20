@@ -39,33 +39,34 @@ void insertAtEnd(Node *&head, int data)
   temp->next = newNode;
 }
 
-Node * reverseLinkedList(Node * head){
-  Node * prev = nullptr;
-  Node  * current = head;
-  Node * next = nullptr;
-  while(current!= nullptr){
+Node *reverseLinkedList(Node *head)
+{
+  Node *prev = nullptr;
+  Node *current = head;
+  Node *next = nullptr;
+  while (current != nullptr)
+  {
     next = current->next;
-    current -> next=prev; //change the direction
-    prev = current;  // prev ->point to current 
-    current = next; // increment current 
+    current->next = prev; // change the direction
+    prev = current;       // prev ->point to current
+    current = next;       // increment current
   }
   return prev; // pointer of the last node
 }
 // main start here ...
 int main()
 {
-
   Node *head = nullptr;
   insertAtEnd(head, 10);
   insertAtEnd(head, 20);
   insertAtEnd(head, 30);
   insertAtEnd(head, 40);
   insertAtEnd(head, 50);
-  cout<<"before reversing the node : "<<endl;
+  cout << "before reversing the node : " << endl;
   displayNode(head);
-  cout<<endl;
-  cout<<"After reversing the node : "<<endl;
-  Node * reverseNode = reverseLinkedList(head);
+  cout << endl;
+  cout << "After reversing the node : " << endl;
+  Node *reverseNode = reverseLinkedList(head);
   displayNode(reverseNode);
   return 0;
 }
