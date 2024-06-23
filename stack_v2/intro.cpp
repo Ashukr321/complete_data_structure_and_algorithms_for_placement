@@ -1,39 +1,21 @@
+//preprocessor
 #include<iostream>
 using namespace std;
 
-class Stack {
-  private:
-    int *arr;
-    int top;
-    int capacity;
 
-  public:
-    Stack(int capacity) {
-      this->capacity = capacity;
-      this->top = -1;
-      this->arr = new int[capacity];
-    }
-
-    void push(int data) {
-      if (top == capacity - 1) {
-        cout << "Stack Overflow. Cannot push " << data << endl;
-        return;
-      }
-      arr[++top] = data;
-      cout << "Pushing " << data << endl;
-    }
-};
-
-int main() {
-  int size;
-  cout << "Enter the size of the stack: ";
-  cin >> size;
-
-  Stack s(size);
-
-  s.push(12);
-  s.push(1);
-  s.push(1);
-
+//main start here ...
+int main(){
+  cout<<"stack  implementation in the cpp "<<endl;
+  // operation of the stack using array => fixed size array : 
+  // stack work on the lifo principle last in first out 
+  //  push -> add new element in the stack
+  // pop  ->remove element from the stack  
+  // underflow  -> when stack become empty 
+  //overflow -> when stack is become full
+  // stack can be implemented by using stack as well as linked list 
+  // stack can be used in the parsing of the expression
   return 0;
 }
+
+
+//  application of the stack  
