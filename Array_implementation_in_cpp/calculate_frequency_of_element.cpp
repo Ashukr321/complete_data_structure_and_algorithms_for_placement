@@ -20,7 +20,11 @@ int main()
   }
 
   // create the map that store the map<int, int> myMap
-  map<int, int> freqMap;
+  map</* In this C++ code snippet, `int` is used to declare integer variables. For example, `int size;`
+  declares a variable named `size` that can hold integer values. Similarly, `int arr[size];`
+  declares an array named `arr` that can hold integers, with the size specified by the user
+  input. */
+  int, int> freqMap;
 
   // example : 1,2,3,3,4,4
   for (int i = 0; i < size; i++)
