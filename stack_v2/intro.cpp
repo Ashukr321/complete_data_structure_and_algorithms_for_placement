@@ -2,7 +2,6 @@
 #include<iostream>
 using namespace std;
 
-
 //main start here ...
 int main(){
   cout<<"stack  implementation in the cpp "<<endl;
@@ -16,6 +15,3 @@ int main(){
   // stack can be used in the parsing of the expression
   return 0;
 }
-
-
-//  application of the stack  
