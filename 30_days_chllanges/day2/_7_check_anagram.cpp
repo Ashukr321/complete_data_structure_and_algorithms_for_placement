@@ -29,7 +29,7 @@ int main()
   cin >> str2;
   cout << "Your str 1 is " << str1 << endl;
   cout << "Your str2 is " << str2 << endl;
-  cout<<endl;
+  cout << endl;
   if (anagram(str1, str2))
   {
     cout << "Enter your string is Anagram " << str1 << " and " << str2 << endl;
