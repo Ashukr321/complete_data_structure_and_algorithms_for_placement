@@ -38,6 +38,7 @@ int main()
     cin >> n;
     arr[i] = n;
   }
+  
 
   cout << "before sorting: " << endl;
   displayArray(arr, size);
