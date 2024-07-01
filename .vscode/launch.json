@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/srting_implementation_v2.0",
-      "program": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/srting_implementation_v2.0/build/Debug/outDebug",
+      "cwd": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/Recursion",
+      "program": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/Recursion/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

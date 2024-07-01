@@ -19,6 +19,7 @@ int maxPicesc(int n, int a, int b, int c)
   }
   return res + 1;
 }
+
 // main start here ...
 int main()
 {
