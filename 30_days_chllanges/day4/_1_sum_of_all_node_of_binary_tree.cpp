@@ -56,7 +56,7 @@ int main()
   root->right->left = new Node(6);
   root->right->right = new Node(7);
   // in order traversal
-  cout << "inorder traversal of the node : " << endl;
+  cout << "in order traversal of the node : " << endl;
   root->inOrder(root);
   cout << endl;
 
