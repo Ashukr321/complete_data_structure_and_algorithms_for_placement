@@ -8,17 +8,18 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/30_days_chllanges/day3",
-      "program": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/30_days_chllanges/day3/build/Debug/outDebug",
+      "cwd": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/30_days_chllanges/day6",
+      "program": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/30_days_chllanges/day6/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
-          "ignoreFailures": true
+          "ignoreFailures": false
         }
       ]
     }
-  ]
+  ],
+  "compounds": []
 }
