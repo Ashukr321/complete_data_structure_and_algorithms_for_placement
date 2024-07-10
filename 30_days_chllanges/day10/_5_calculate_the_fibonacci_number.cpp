@@ -18,7 +18,7 @@ int main()
   int n;
   cout << "Enter yor number nth position you want fibonacci number: " << endl;
   cin >> n;
-  int fibNum =fibonacci(n);
-  cout<<"the fibonacci number nth position : "<< fibNum<<endl;
+  int fibNum = fibonacci(n);
+  cout << "the fibonacci number nth position : " << fibNum << endl;
   return 0;
 }
