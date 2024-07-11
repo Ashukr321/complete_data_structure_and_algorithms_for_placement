@@ -37,6 +37,7 @@ int Node::height(Node *root)
   }
   return 1 + max(height(root->left), height(root->right));
 }
+
 // main start here ...
 int main()
 {
