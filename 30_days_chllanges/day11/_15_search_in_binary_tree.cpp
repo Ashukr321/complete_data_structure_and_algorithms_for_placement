@@ -19,6 +19,7 @@ public:
   static void inOrder(Node *root);
   static bool searchInBinaryTree(Node *root, int target);
 };
+
 void Node::inOrder(Node *root)
 {
   if (root == nullptr)
@@ -30,6 +31,7 @@ void Node::inOrder(Node *root)
   cout << root->data << " =>";
   inOrder(root->right);
 }
+
 
 bool Node::searchInBinaryTree(Node *root, int target)
 {
@@ -43,6 +45,7 @@ bool Node::searchInBinaryTree(Node *root, int target)
   }
   return searchInBinaryTree(root->left, target) || searchInBinaryTree(root->right, target);
 }
+
 // main start here ...
 int main()
 {
