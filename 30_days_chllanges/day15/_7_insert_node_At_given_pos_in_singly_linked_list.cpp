@@ -19,11 +19,16 @@ public:
 void Node::displayNode(Node *head)
 {
   Node *temp = head;
-  while (temp != nullptr)
+  if (head == nullptr)
+  {
+    cout << "List is empty" << endl;
+    return;
+  }
+  do
   {
     cout << temp->data << " ->";
     temp = temp->next;
-  }
+  } while (temp != head);
   cout << "head" << endl;
 }
 
@@ -33,14 +38,16 @@ void Node::insertAtEnd(Node *&head, int data)
   if (head == nullptr)
   {
     head = newNode;
+    newNode->next = head; // circular link
     return;
   }
   Node *temp = head;
-  while (temp->next != nullptr)
+  while (temp->next != head)
   {
     temp = temp->next;
   }
   temp->next = newNode;
+  newNode->next = head; // circular link
 }
 
 void Node::insertAtPos(Node *&head, int pos, int data)
@@ -49,15 +56,23 @@ void Node::insertAtPos(Node *&head, int pos, int data)
   if (pos == 1)
   {
     newNode->next = head;
+    Node *temp = head;
+    while (temp->next != head)
+    {
+      temp = temp->next;
+    }
+    temp->next = newNode;
     head = newNode;
     return;
   }
   Node *temp = head;
-  for (int i = 1; temp != nullptr && i < pos - 1; i++)
+  int i = 1;
+  while (temp->next != head && i < pos - 1)
   {
     temp = temp->next;
+    i++;
   }
-  if (temp == nullptr)
+  if (temp->next == head)
   {
     cout << "invalid index " << endl;
     return;
@@ -85,10 +100,10 @@ int main()
 
   Node::displayNode(head);
   int target;
-  cout << "Enter the element that u want to update: " << endl;
+  cout << "Enter the element that u want to insert: " << endl;
   cin >> target;
   int pos;
-  cout << "Enter the position at which u want to update it : " << endl;
+  cout << "Enter the position at which u want to insert it : " << endl;
   cin >> pos;
   Node::insertAtPos(head, pos, target);
   cout << "After updating the node at : " << pos << endl;
