@@ -1,4 +1,3 @@
-// preprocessor
 #include <iostream>
 using namespace std;
 
@@ -20,11 +19,11 @@ public:
 void Node::displayNode(Node *head)
 {
   Node *temp = head;
-  do
+  while (temp != nullptr)
   {
     cout << temp->data << " ->";
     temp = temp->next;
-  } while (temp != head);
+  }
   cout << "head" << endl;
 }
 
@@ -34,15 +33,13 @@ void Node::insertAtEnd(Node *&head, int data)
   if (head == nullptr)
   {
     head = newNode;
-    newNode->next = head;
     return;
   }
   Node *temp = head;
-  while (temp->next != head)
+  while (temp->next != nullptr)
   {
     temp = temp->next;
   }
-  newNode->next = temp->next;
   temp->next = newNode;
 }
 
@@ -51,12 +48,12 @@ void Node::insertAtPos(Node *&head, int pos, int data)
   Node *newNode = new Node(data);
   if (pos == 1)
   {
-    head == newNode;
     newNode->next = head;
+    head = newNode;
     return;
   }
   Node *temp = head;
-  for (int i = 0; i < pos - 1 && temp != nullptr; i++)
+  for (int i = 1; temp != nullptr && i < pos - 1; i++)
   {
     temp = temp->next;
   }
@@ -66,9 +63,10 @@ void Node::insertAtPos(Node *&head, int pos, int data)
     return;
   }
 
-  temp->data = data;
+  newNode->next = temp->next;
+  temp->next = newNode;
 }
-// main start here ...
+
 int main()
 {
   Node *head = nullptr;
