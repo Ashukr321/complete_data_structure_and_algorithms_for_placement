@@ -34,8 +34,8 @@ int main()
   {
     int n;
     cout << "Enter the element at index: " << i << ;
-    cin >> n;
-    arr[i] = n;
+    cin >> n
+               arr[i] = n;
   }
   cout << endl;
   cout << "before reversing the array : " << endl;
