@@ -50,12 +50,12 @@ Node *Node::findMidNode(Node *head)
 {
   Node *slow = head;
   Node *fast = head;
-  while (fast->next != nullptr && fast->next->next !=nullptr)
+  while (fast->next != nullptr && fast->next->next != nullptr)
   {
     slow = slow->next;
     fast = fast->next->next;
   }
- return slow;
+  return slow;
 }
 
 // main start here ...
