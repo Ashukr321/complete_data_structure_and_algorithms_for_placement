@@ -54,6 +54,7 @@ void Node::insertNodeAtBegin(Node *&head, int data)
   }
 }
 
+
 // main start here ...
 int main()
 {
