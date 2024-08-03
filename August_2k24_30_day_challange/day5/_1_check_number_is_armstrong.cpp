@@ -28,7 +28,7 @@ vector<int> findAllArmstrong(int start, int end)
 {
   vector<int> armstrongNumbers;
   for (int num = start; num <= end; num++) // change num to num++ and add <=
-  {
+{
     if (isArmStrong(num))
     {
       armstrongNumbers.push_back(num);
