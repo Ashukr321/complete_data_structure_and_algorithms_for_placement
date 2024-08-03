@@ -6,6 +6,7 @@ void checkEvenOrOdd(int num)
   if (num <= 0)
   {
     cout << "Invalid input" << endl;
+    return;
   }
   if (num % 2 == 0)
   {
