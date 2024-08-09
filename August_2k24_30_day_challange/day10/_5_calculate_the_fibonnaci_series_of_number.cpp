@@ -1,6 +1,5 @@
 // preprocessor
-#include <iostream>5
-
+#include <iostream>
 using namespace std;
 
 int fibonacciOfNth(int n)
