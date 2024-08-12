@@ -36,8 +36,42 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
 
 ### Trees
 
+#### Tree Types
+
+##### Perfect Tree (P)
+
 * Time Complexity: O(log n) for search, O(n) for insertion/deletion
 * Space Complexity: O(n)
+* Applications: Database indexing, File systems, Compilers
+* Example: File system hierarchy
+
+##### Complete Tree (C)
+
+* Time Complexity: O(log n) for search, O(n) for insertion/deletion
+* Space Complexity: O(n)
+* Applications: Heap data structure, Priority queues, Scheduling algorithms
+* Example: Heap data structure
+
+##### Balanced Binary Tree (B)
+
+* Time Complexity: O(log n) for search, O(log n) for insertion/deletion
+* Space Complexity: O(n)
+* Applications: Database indexing, File systems, Compilers
+* Example: B-tree index
+
+##### Full Binary Tree (F)
+
+* Time Complexity: O(log n) for search, O(n) for insertion/deletion
+* Space Complexity: O(n)
+* Applications: Expression trees, Syntax trees, Decision trees
+* Example: Expression tree
+
+##### Degenerate Tree (D)
+
+* Time Complexity: O(n) for search, O(n) for insertion/deletion
+* Space Complexity: O(n)
+* Applications: Linked lists, Stacks and queues, Recursive algorithms
+* Example: Linked list
 
 ### Graphs
 
