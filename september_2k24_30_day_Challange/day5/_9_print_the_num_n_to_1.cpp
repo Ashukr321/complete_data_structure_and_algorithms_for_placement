@@ -10,7 +10,8 @@ void printNto1(int n)
     return;
   }
   cout << n << endl;
-  printNto1(n - 1);
+  // printNto1(n--);
+  printNto1(n-1);
 }
 
 // main start here ...
