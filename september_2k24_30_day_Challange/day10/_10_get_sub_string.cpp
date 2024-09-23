@@ -1,13 +1,15 @@
 // preprocessor
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-string getSubString(string str, int start, int end){
+string getSubString(string str, int start, int end)
+{
     return str.substr(start, end - start + 1);
 }
 
 // main starts here ...
-int main(){
+int main()
+{
     string str;
     cout << "Enter your string: " << endl;
     cin >> str;
