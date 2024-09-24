@@ -13,6 +13,7 @@ void maxWordInString(string str)
   {
     if (max < word.length())
     {
+      max=word.length();
       maxLengthWord = word;
     }
   }
