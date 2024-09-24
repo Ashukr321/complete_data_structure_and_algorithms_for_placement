@@ -8,7 +8,11 @@ vector<string> generateAllStringPermutation(string str)
 {
   vector<string> result;
   result.push_back(str);
-  while (next_permutation(str.begin(), str.end()))
+  while (/* `next_permutation` is a function in C++ that rearranges the elements in the range [first,
+  last) into the next lexicographically greater permutation. It returns true if such a
+  permutation exists, and false if the arrangement is already the last permutation possible.
+  This function is useful for generating permutations of a sequence. */
+  next_permutation(str.begin(), str.end()))
   {
     result.push_back(str);
   }
