@@ -1,0 +1,32 @@
+// preprocessor
+#include <iostream>
+using namespace std;
+
+int sumOfArr(int arr[], int size)
+{
+  int sum = 0;
+  for (int i = 0; i < size; i++)
+  {
+    sum += arr[i];
+  }
+  return sum;
+}
+// main start here ...
+int main()
+{
+  int size;
+  cout << "Enter the size of the array :" << endl;
+  cin >> size;
+  int arr[size];
+  for (int i = 0; i < size; i++)
+  {
+    int n;
+    cout << "Enter element at index  " << i << endl;
+    cin >> n;
+    arr[i] = n;
+  }
+
+  cout << "the sum of the array is : " << sumOfArr(arr, size) << endl;
+
+  return 0;
+}

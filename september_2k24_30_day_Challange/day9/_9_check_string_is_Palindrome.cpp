@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-bool isPlaindrome(string str)
+bool isPalindrome(string str)
 {
   for (int i = 0; i < str.length() / 2; i++)
   {
@@ -20,7 +20,7 @@ int main()
   string str;
   cout << "Enter your string :" << endl;
   cin >> str;
-  if (isPlaindrome(str))
+  if (isPalindrome(str))
   {
     cout << "String is palindrome" << endl;
   }
