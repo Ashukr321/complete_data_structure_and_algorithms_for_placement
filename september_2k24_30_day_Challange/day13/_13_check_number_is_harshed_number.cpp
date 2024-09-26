@@ -2,20 +2,17 @@
 #include <iostream>
 using namespace std;
 
-int digitSum(int num)
-{
-  int sum = 0;
-  while (num != 0)
-  {
-    sum += num % 10;
-    num = num / 10;
-  }
-  return sum;
-}
 bool isHashedNum(int num)
 {
-  int sd = digitSum(num);
-  return num % sd == 0;
+  int sum = 0;
+  int originalNum = num;
+  while (num != 0)
+  {
+    int digit = num % 10;
+    sum += digit;
+    num /= num / 10;
+  }
+  return (originalNum % sum == 0);
 }
 // main start here ...
 int main()
