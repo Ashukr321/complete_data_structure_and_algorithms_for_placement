@@ -29,7 +29,6 @@ int main()
     cin >> n;
     arr[i] = n;
   }
-  cout << "Minimum of the array :" << minArr(arr, size) << endl;
 
   return 0;
 }
