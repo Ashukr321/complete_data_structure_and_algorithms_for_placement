@@ -2,18 +2,15 @@
 #include <iostream>
 using namespace std;
 
-int minArr(int arr[], int size)
+int averageOfArr(int arr[], int size)
 {
-  int min = INT_MAX;
+  int sum = 0;
   for (int i = 0; i < size; i++)
   {
-    if (arr[i] < min)
-    {
-      min = arr[i];
-    }
+    sum += arr[i];
   }
 
-  return min;
+  return sum / size;
 }
 // main start here ...
 int main()
@@ -25,10 +22,12 @@ int main()
   for (int i = 0; i < size; i++)
   {
     int n;
-    cout << "Enter elements at index:" << i << endl;
+    cout << "Enter the element at index:" << i << endl;
     cin >> n;
     arr[i] = n;
   }
+
+  cout << "the average of the array :" << averageOfArr(arr, size) << endl;
 
   return 0;
 }
