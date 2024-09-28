@@ -114,7 +114,8 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     27.	Write a program to find substring within a string , if found display position
     28.	Reverse the string using two pointer approach 
     29.	Generate all the permutation of the string, also find total number of permutations ? 
-    30.	Check string is a permutation or not  
+    30.	Check string is a permutation or not 
+    31.	Implement brute force first occurrence index of string matching algo  
 
 
 ## Stack 
