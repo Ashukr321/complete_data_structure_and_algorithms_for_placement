@@ -43,7 +43,6 @@ int main()
   }
 
   cout << "before move zero end " << endl;
-  printArr(arr, size);
   cout << "After move zero end " << endl;
   moveZeroEnd(arr, size);
   printArr(arr, size);
