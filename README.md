@@ -79,9 +79,12 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     34.	Search in 2d matrix 
     35.	Print matrix in spiral manner 
     36.	Sort 0 1 and 2 
-    37.	Find the intersection of the array 
-
-
+    37.	Find the intersection of the array
+    38.Rotate the Array  left by 1 position
+    39.	Rotate array right by 1 position 
+    40.	Rotate array left by kth position using stl vector 
+    41.	Check array is subset of another array using unOrder_map use frequency 
+    
 ## String
 
 
