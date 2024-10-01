@@ -1,0 +1,41 @@
+// preprocessor
+#include <iostream>
+using namespace std;
+
+bool isSorted(int arr[], int size)
+{
+  for (int i = 0; i < size - 1; i++)
+  {
+    if (arr[i] < arr[i + 1])
+    {
+      return true;
+    }
+  }
+  return false;
+}
+// main start here ...
+int main()
+{
+  int size;
+  cout << "Enter the size of the array :" << endl;
+  cin >> size;
+  int arr[size];
+  for (int i = 0; i < size; i++)
+  {
+    int n;
+    cout << "Enter element at index:" << i << endl;
+    cin >> n;
+    arr[i] = n;
+  }
+
+  if (isSorted(arr, size))
+  {
+    cout << "Array is sorted" << endl;
+  }
+  else
+  {
+    cout << "Array is not Sorted " << endl;
+  }
+
+  return 0;
+}
