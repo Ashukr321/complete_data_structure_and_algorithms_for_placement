@@ -12,9 +12,7 @@ void printArr(int arr[], int size)
 }
 void reverseArr(int arr[], int size)
 {
-  int i = 0;5
-  1
-  2
+  int i = 0;
   int j = size - 1;
   while (i < j)
   {
