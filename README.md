@@ -83,7 +83,9 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     38. Rotate the Array  left by 1 position
     39.	Rotate array right by 1 position 
     40.	Rotate array left by kth position using stl vector 
-    41.	Check array is subset of another array using unOrder_map use frequency 
+    41.	Check array is subset of another array using unOrder_map use frequency
+    41.	Move negative number one side in array   
+
     
 ## String
 
