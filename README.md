@@ -85,7 +85,7 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     40.	Rotate array left by kth position using stl vector 
     41.	Check array is subset of another array using unOrder_map use frequency
     42.	Move negative number one side in array 
-    43.	Generate ALL Permutation of the array element    
+    43.	Generate ALL Permutation of the array element   
 
     
 ## String
