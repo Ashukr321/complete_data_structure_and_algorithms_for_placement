@@ -285,7 +285,8 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     2. Explain the selection sort and time complexity
     3. Explain the insertion sort and time complexity 
     4. Explain the merge sort  
-    5. Explain the quick sort 
+    5. Explain the quick sort
+    6. Explain the working of counting  sort implement in cpp   
     6. Explain the heap sort and its time complexity 
 
 
