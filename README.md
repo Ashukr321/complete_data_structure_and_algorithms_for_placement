@@ -141,7 +141,6 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     13.	Implement tower of Hanoi
     14.	Balance parenthesis
     15.	What is the use of the stack data structure 
-
 ## Queue
     1.	What is queue 
     2.	How we can implement queue using array and linked list 
