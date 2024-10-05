@@ -77,7 +77,7 @@ public:
   void printStack(){
     for (int i =0; i <= top; i++)
     {
-      cout<<array[i]<<endl;
+      cout<<array[i]<< " ";
     }
   }
 };
@@ -92,6 +92,7 @@ int main()
   stack.push(5);
   //print the stack 
   stack.printStack();
+  cout<<endl;
   cout<<"After reverse the stack "<<endl;
   stack.reverseStack();
   cout<<endl;
