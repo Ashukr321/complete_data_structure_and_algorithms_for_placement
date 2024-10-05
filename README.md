@@ -6,8 +6,7 @@
 
 Welcome to my Data Structures and Algorithms repository, where I implement and explore various algorithms and data structures in C++. This repository is designed to provide a comprehensive collection of algorithms and data structures, along with their time and space complexities, to help developers and students learn and practice.
 
-
-
+![Logo](Resources/img.png)
 
 ## Problems On Number
     1.	Check the number is palindrome or not 
@@ -126,6 +125,45 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
 
 
 ## Stack 
+![Logo](Resources/img_1.png)
+## Important Points about Stacks:
+## Concept
+* LIFO/FILO: Stack is a Last-In-First-Out (LIFO) or First-In-Last-Out (FILO) data structure. The last element added is the first one removed, like a stack of plates.
+* Abstract Data Type: It's a conceptual data structure with defined operations (push, pop) rather than a specific implementation.
+* 
+### Operations
+* push(data): Inserts data onto the top of the stack.
+* pop(): Removes and returns the top element of the stack.
+### States
+* Underflow: Trying to pop from an empty stack.
+* Overflow: Trying to push an element onto a full stack (though often handled differently in practical implementations).
+### Indirect Applications
+
+* Balancing of Symbols: Ensures that opening and closing symbols are properly matched.
+* Infix-to-Postfix Conversion: Converts mathematical expressions from infix notation to postfix notation.
+* Evaluation of Postfix Expression: Evaluates mathematical expressions written in postfix notation.
+### Implementation
+
+* Simple Array Implementation: Stores elements in an array, with the top element at the end of the array.
+* Dynamic Array Implementation: Stores elements in an array that can grow or shrink as needed.
+* Linked List Implementation: Stores elements in a linked list, with each element pointing to the next one in the list.
+### Applications
+
+#### Following are some of the applications in which stacks play an important role.
+### Direct Applications:
+* Balancing of symbols
+* Infix-to-postfix conversion
+* Evaluation of postfix expression
+### Indirect applications
+* Auxiliary data structure for other algorithms (Example: Tree traversal algorithms)
+* Component of other data structures (Example: Simulating queues, refer Queues chapter)
+### Implementation
+* There are many ways of implementing stack ADT; below are the commonly used methods.
+
+* Simple array based implementation
+* Dynamic array based implementation
+* Linked lists implementation
+#
     1.	Implement stack using array and linked list 
     2.	Reverse the stack 
     3.	How does functional call stack work in the programming 
@@ -141,6 +179,8 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     13.	Implement tower of Hanoi
     14.	Balance parenthesis
     15.	What is the use of the stack data structure 
+
+
 ## Queue
     1.	What is queue 
     2.	How we can implement queue using array and linked list 
