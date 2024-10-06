@@ -31,6 +31,9 @@
 Welcome to my Data Structures and Algorithms repository, where I implement and explore various algorithms and data structures in C++. This repository is designed to provide a comprehensive collection of algorithms and data structures, along with their time and space complexities, to help developers and students learn and practice.
 
 ![Logo](Resources/img.png)
+# Patterns Problems
+
+![Logo](Resources/patterns.jpg)
 
 ## Problems On Number
     1.	Check the number is palindrome or not 
