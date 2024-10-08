@@ -22,7 +22,8 @@ int main()
   int a, b;
   cout << "Enter the a :" << endl;
   cin >> a;
-  cout << "Enter the b :" << endl;
+  cout << "Enter the b :" << endl; .
+  
   cin >> b;
   cout << "lcm of the two number :" << lcm(a, b) << endl;
   return 0;
