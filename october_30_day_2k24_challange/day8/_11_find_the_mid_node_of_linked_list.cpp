@@ -55,6 +55,21 @@ Node *middNode(Node *head)
   }
   return slow;
 }
+int searchNode(Node *head, int target)
+{
+  int position = 1;
+  Node *currentNode = head;
+  while (currentNode != nullptr)
+  {
+    if (currentNode->data == target)
+    {
+      return position;
+    }
+    currentNode = currentNode->next;
+    position++;
+  }
+  return -1;
+}
 
 // main start here ...
 int main()
@@ -71,6 +86,10 @@ int main()
   Node *midNode = middNode(head);
 
   cout << midNode->data << endl;
-
+  int target;
+  cout << "Enter the target data :" << endl;
+  cin >> target;
+  cout<<endl;
+  cout << searchNode(head, target) << endl;
   return 0;
 }
