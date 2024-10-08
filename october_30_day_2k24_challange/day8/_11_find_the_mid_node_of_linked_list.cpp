@@ -7,20 +7,22 @@ class Node
 public:
   int data;
   Node *next;
-  // constructor
   Node(int data)
   {
     this->data = data;
-    this->next = NULL;
+    this->next = nullptr;
   }
 };
+
 void insertNodeAtEnd(Node *&head, int data)
 {
+  // create the newNode;
+  Node *newNode = new Node(data);
   Node *temp = head;
   // check corner case
   if (temp == nullptr)
   {
-    head = new Node(data);
+    head = newNode;
     return;
   }
 
@@ -28,55 +30,47 @@ void insertNodeAtEnd(Node *&head, int data)
   {
     temp = temp->next;
   }
-  Node *newNode = new Node(data);
   temp->next = newNode;
 }
 
-void displayLinkedList(Node *head)
+void displayNode(Node *&head)
 {
   Node *temp = head;
   while (temp != nullptr)
   {
-    cout << temp->data << " -> ";
+    cout << temp->data << "-> ";
     temp = temp->next;
   }
+  cout << "NULL" << endl;
 }
 
-Node *reverseLinkedList(Node *&head)
+Node *middNode(Node *head)
 {
-  // create 3 pointer
-  Node *prev = nullptr;
-  Node *current = head;
-  Node *next = nullptr;
-
-  // implement reversing logic
-  while (current != nullptr)
+  Node *slow = head;
+  Node *fast = head;
+  while (fast != nullptr && fast->next != nullptr)
   {
-    next = current->next;
-    current->next = prev;
-    prev = current;
-    current = next;
+    slow = slow->next;
+    fast = fast->next->next;
   }
-  return prev;
+  return slow;
 }
 
 // main start here ...
 int main()
 {
-
-  // create the head node
   Node *head = nullptr;
   insertNodeAtEnd(head, 1);
   insertNodeAtEnd(head, 2);
   insertNodeAtEnd(head, 3);
   insertNodeAtEnd(head, 4);
   insertNodeAtEnd(head, 5);
-
-  cout << "Display node Before reversing  :" << endl;
-  displayLinkedList(head);
-  head = reverseLinkedList(head);
+  cout << "Display the node :" << endl;
+  displayNode(head);
   cout << endl;
-  cout << "After reverse the linked list :" << endl;
-  displayLinkedList(head);
+  Node *midNode = middNode(head);
+
+  cout << midNode->data << endl;
+
   return 0;
 }
