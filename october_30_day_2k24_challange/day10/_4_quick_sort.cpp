@@ -5,17 +5,17 @@ using namespace std;
 void printArr(int arr[], int size)
 {
   for (int i = 0; i < size; i++)
- 
-    {
-      cout << arr[i] << endl;
-    }
+
+  {
+    cout << arr[i] << endl;
+  }
 }
 
 int partition(int arr[], int low, int high)
 {
   int pivot = arr[high];
   int i = (low - 1);
-  for (int j = low; j<high; j++)
+  for (int j = low; j < high; j++)
   {
     if (arr[j] <= pivot)
     {
