@@ -61,8 +61,8 @@ int main()
   insertNodeAtEnd(head, 4);
   insertNodeAtEnd(head, 5);
   printLinkedList(head);
-  cout<<endl;
-  cout<<"Mid Node of Linked list"<<endl;
+  cout << endl;
+  cout << "Mid Node of Linked list" << endl;
   Node *midNode = findMidNode(head);
   cout << midNode->data << endl;
   return 0;
