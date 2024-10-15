@@ -62,6 +62,7 @@ void insertNodeAtLeft(Node *&root, int data)
   temp->left = new Node(data);
 }
 
+
 // main start here ...
 int main()
 {
@@ -70,7 +71,7 @@ int main()
   insertNodeAtRight(root,2);
   insertNodeAtLeft(root->left,3);
   insertNodeAtRight(root->left,4);
-
+   
   insertNodeAtLeft(root->right,5);
   insertNodeAtRight(root->right,6);
   postOrderTreeTraversal(root);
