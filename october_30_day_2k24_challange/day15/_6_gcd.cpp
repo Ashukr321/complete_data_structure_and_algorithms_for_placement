@@ -9,6 +9,9 @@ int gcd(int a,int b){
   }
   return gcd(b,a%b);
 }
+int lcm(int a,int b){
+  return a*b/gcd(a,b);
+}
 //main start here ...
 int main(){
   int a, b ;
@@ -17,6 +20,7 @@ int main(){
   cout<<"Enter b :"<<endl;
   cin>>b;
   cout<<"Gcd  of the two number "<< a << " and "<< b <<" "<< gcd(a,b)<<endl;
+  cout<<"Lcm  of the two number "<< a << " and "<< b <<" "<< lcm(a,b)<<endl;
 
   return 0;
 }
