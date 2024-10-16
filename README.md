@@ -297,6 +297,8 @@ Welcome to my Data Structures and Algorithms repository, where I implement and e
     25.	Find the minimum and maximum height of the tree ?
     26.	Print the tree node data using level order traversal ( uses queue Ds) ?
     27. print  reverse level order tree traversal using queue  and stack Ds ? 
+    28.find the diameter of the binary tree 
+    
      
 
 ## Recursion
