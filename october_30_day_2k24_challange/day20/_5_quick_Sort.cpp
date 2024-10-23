@@ -10,7 +10,7 @@ void printArr(int arr[], int size)
     cout << arr[i] << " ";
   }
 }
-int partition(int arr[],int low,int high){
+int partition(int arr[],int low,int high){ c
   int pivot = arr[high];
   int i = low-1;
   for (int j = low; j < high; j++)
