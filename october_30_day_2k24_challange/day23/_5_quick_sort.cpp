@@ -1,6 +1,6 @@
 // preprocessor
 #include <iostream>
-#include<algorithm>
+#include <algorithm>
 using namespace std;
 
 void printArr(int arr[], int size)
@@ -9,21 +9,26 @@ void printArr(int arr[], int size)
   {
     cout << arr[i] << " ";
   }
+  cout << endl;
 }
-int partition(int arr[],int low,int high){ c
+
+int partition(int arr[], int low, int high)
+{
   int pivot = arr[high];
-  int i = low-1;
+  int i = low - 1;
   for (int j = low; j < high; j++)
   {
-    if(arr[j]<=pivot){
+    if (arr[j] <= pivot)
+    {
       i++;
-      swap(arr[i],arr[j]);
+      swap(arr[i], arr[j]);
     }
   }
-  swap(arr[i+1],arr[high]);
-  return i+1;
-  
+  swap(arr[i + 1], arr[high]);
+  return i + 1;
 }
+
+
 void quickSort(int arr[], int low, int high)
 {
   if (low < high)
@@ -33,11 +38,12 @@ void quickSort(int arr[], int low, int high)
     quickSort(arr, pivot + 1, high);
   }
 }
+
 // main start here ...
 int main()
 {
   int size;
-  cout << "Enter the size of the array :" << endl;
+  cout << "Enter the size of the array: ";
   cin >> size;
   int arr[size];
   for (int i = 0; i < size; i++)
@@ -47,12 +53,11 @@ int main()
     cin >> n;
     arr[i] = n;
   }
-  cout << "Before quick sort :" << endl;
+
+  cout << "Before quick sort:" << endl;
   printArr(arr, size);
-  cout << endl;
-  cout << "After quick sort:" << endl;
+  cout << "After quick sort 🧑‍💻 :" << endl;
   quickSort(arr, 0, size - 1);
   printArr(arr, size);
-
   return 0;
 }
