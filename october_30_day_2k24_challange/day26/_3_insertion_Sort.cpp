@@ -1,30 +1,28 @@
 // preprocessor
 #include <iostream>
-#include <algorithm>
 using namespace std;
 
 void displayArr(int arr[], int size)
 {
-
   for (int i = 0; i < size; i++)
   {
     cout << arr[i] << " ";
   }
   cout << endl;
 }
-void selectionSort(int arr[], int size)
+
+void insertionSort(int arr[], int size)
 {
-  for (int i = 0; i < size; i++)
+  for (int i = 1; i < size; i++)
   {
-    int minIndex = i;
-    for (int j = i + 1; j < size; j++)
+    int key = arr[i];
+    int j = i - 1;
+    while (j >= 0 && arr[j] > key)
     {
-      if (arr[j] < arr[minIndex])
-      {
-        minIndex = j;
-      }
+      arr[j + 1] = arr[j];
+      j--;
     }
-    swap(arr[minIndex], arr[i]);
+    arr[j + 1] = key;
   }
 }
 // main start here ...
@@ -37,16 +35,16 @@ int main()
   for (int i = 0; i < size; i++)
   {
     int n;
-    cout << "Enter the element at index:" << i << endl;
+    cout << "Enter the element at index :" << i << endl;
     cin >> n;
     arr[i] = n;
   }
 
-  cout << "before selection sort :" << endl;
+  cout << "Before insertion sort :" << endl;
   displayArr(arr, size);
-  cout << "After selection sort :" << endl;
-  selectionSort(arr, size);
-  displayArr(arr, size);
+  cout << "After insertion sort :" << endl;
+  insertionSort(arr, size);
 
+  displayArr(arr, size);
   return 0;
 }
