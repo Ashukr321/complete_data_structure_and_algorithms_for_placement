@@ -7,6 +7,7 @@ class Node
 public:
   int data;
   Node *next;
+  // constructor
   Node(int data)
   {
     this->data = data;
@@ -42,33 +43,19 @@ void insertNodeAtEnd(Node *&head, int data)
   temp->next = newNode;
 }
 
-void updateAtGivenPos(Node *&head, int data, int pos)
+bool searchNode(Node *head, int data)
 {
-  // check corner case
-  if (pos <= 0)
-  {
-    cout << "Invalid position" << endl;
-    return;
-  }
-  if (pos == 1)
-  {
-    head->data = data;
-    return;
-  }
   Node *temp = head;
-  for (int i = 1; i < pos - 1; i++)
+  while (temp != nullptr)
   {
-    if (temp == nullptr)
+    if (temp->data == data)
     {
-      cout << "Invalid position" << endl;
-      return;
+      return true;
     }
     temp = temp->next;
   }
-  temp->next->data = data;
+  return false;
 }
-
-
 // main start here ...
 int main()
 {
@@ -79,14 +66,17 @@ int main()
   insertNodeAtEnd(head, 4);
   insertNodeAtEnd(head, 5);
   displayNode(head);
-  int updatedData;
-  cout << "Enter data " << endl;
-  cin >> updatedData;
-  int pos;
-  cout << "Enter your pos:" << endl;
-  cin >> pos;
-  updateAtGivenPos(head, updatedData, pos);
-  displayNode(head);
-  
+  int searchData;
+  cout << "Enter the  searchData :" << endl;
+  cin >> searchData;
+  if (searchNode(head, searchData))
+  {
+    cout << "yes node is present in the linked list :" << endl;
+  }
+  else
+  {
+    cout << "Sorry ! Node data is not +nt in the linked list :" << endl;
+  }
+
   return 0;
 }
