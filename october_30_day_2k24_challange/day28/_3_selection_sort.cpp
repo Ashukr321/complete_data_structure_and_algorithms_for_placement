@@ -40,11 +40,11 @@ int main()
     cin >> n;
     arr[i] = n;
   }
-  cout<<"Before selection sort :"<<endl;
-  displayNode(arr,size);
-  cout<<"After selection sort :"<<endl;
-  selectionSort(arr,size);
-  displayNode(arr,size);
+  cout << "Before selection sort :" << endl;
+  displayNode(arr, size);
+  cout << "After selection sort :" << endl;
+  selectionSort(arr, size);
+  displayNode(arr, size);
 
   return 0;
 }
