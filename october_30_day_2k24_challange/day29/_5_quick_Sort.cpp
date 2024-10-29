@@ -28,9 +28,9 @@ int partition(int arr[], int low, int high)
   swap(arr[i + 1], arr[high]);
   return i + 1;
 }
+
 void quickSort(int arr[], int low, int high)
 {
-
   if (low < high)
   {
     int pivot = partition(arr, low, high);
@@ -57,8 +57,7 @@ int main()
   displayArr(arr, size);
   cout << endl;
   cout << "After quick sort :" << endl;
-  quickSort(arr, 0,size-1);
+  quickSort(arr, 0, size - 1);
   displayArr(arr, size);
-
   return 0;
 }
