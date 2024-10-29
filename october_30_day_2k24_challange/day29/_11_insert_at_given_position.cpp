@@ -82,13 +82,11 @@ int main()
   insertAtEnd(head, 4);
   insertAtEnd(head, 5);
   displayNode(head);
-  cout<<endl;
-  cout<<"After insertion at pos:"<<endl;
-  
+  cout << endl;
+  cout << "After insertion at pos:" << endl;
 
-  insertAtGivenPos(head,200,2);
+  insertAtGivenPos(head, 200, 2);
   displayNode(head);
-
 
   return 0;
 }
