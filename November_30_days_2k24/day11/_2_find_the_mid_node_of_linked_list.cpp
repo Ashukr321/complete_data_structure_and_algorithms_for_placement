@@ -52,6 +52,20 @@ Node * findMidNode(Node *head){
   }
   return slow;
 }
+
+// ⭐ reverse the linked list 
+void reverseLinkedList(Node * & head){
+  Node * prev = nullptr;
+  Node * current  = head;
+  Node * next = nullptr;
+  while(current!=nullptr){
+    next = current->next;
+    current->next= prev;
+    prev = current;
+    current = next;
+  }
+  head = prev;
+}
 // main start here ...
 int main()
 {
@@ -65,5 +79,9 @@ int main()
   displayNode(head);
   Node * midNode= findMidNode(head);
   cout<<"Mid Node is "<<midNode->data<<endl;
+
+  cout<<"Reverse the linked list "<<endl;
+  reverseLinkedList(head);
+  displayNode(head);
   return 0;
 }
