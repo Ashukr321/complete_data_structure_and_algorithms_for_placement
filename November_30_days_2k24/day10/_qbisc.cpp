@@ -56,6 +56,37 @@ void insertionSort(int arr[], int size)
     arr[j + 1] = key;
   }
 }
+
+/// 4 counting sort
+void countingSort(int arr[], int size)
+{
+  int max = arr[0];
+  for (int i = 0; i < size; i++)
+  {
+    if (arr[i] > max)
+    {
+      max = arr[i];
+    }
+  }
+
+  // count array
+  int countArr[max+1] = {0};
+  // calculate  freq
+  for (int i = 0; i < size; i++)
+  {
+    countArr[arr[i]]++;
+  }
+  int j = 0;
+  for (int i = 0; i <= max; i++)
+  {
+    while (countArr[i] > 0)
+    {
+      arr[j] = i;
+      j++;
+      countArr[i]--;
+    }
+  }
+}
 // main start here ...
 int main()
 {
@@ -86,6 +117,11 @@ int main()
   cout << endl;
   cout << "3 insertion sort :" << endl;
   insertionSort(arr, size);
+  displayArr(arr, size);
+
+  cout << endl;
+  cout << "4 counting sort :" << endl;
+  countingSort(arr, size);
   displayArr(arr, size);
 
   return 0;
