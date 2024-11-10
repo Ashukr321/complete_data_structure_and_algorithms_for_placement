@@ -24,6 +24,20 @@ void bubbleSort(int arr[], int size)
     }
   }
 }
+
+void selectionSort(int arr[],int size){
+  for (int i = 0; i < size; i++)
+  {
+    int minIndex = i;
+    for (int j = i+1; j < size; j++)
+    {
+      if(arr[j]<arr[minIndex]){
+        minIndex = j;
+      }
+    }
+    swap(arr[minIndex], arr[i]);
+  } 
+}
 // main start here ...
 int main()
 {
@@ -45,6 +59,14 @@ int main()
   cout << "After bubble sort :" << endl;
   bubbleSort(arr, size);
   displayArr(arr, size);
+  cout<<endl;
 
+
+  cout<<"2. Selection sort :"<<endl;
+  selectionSort(arr,size);
+  displayArr(arr,size);
+
+
+  
   return 0;
 }
