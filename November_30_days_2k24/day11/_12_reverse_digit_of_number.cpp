@@ -12,7 +12,7 @@ int reverseDigit(int num){
   }
   return reverse;
 }
-//main start here ...
+//main start here ..
 int main(){
   int num ;
   cout<<"Enter the number : "<<endl;
