@@ -14,6 +14,7 @@ bool isPerfectNum(int num)
   }
   return num == sum;
 }
+
 // main start here ...
 int main()
 {
