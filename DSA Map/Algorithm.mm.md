@@ -9,7 +9,6 @@
   7. Generality
 
 
-
 ## Brute Force Algorithm
   - Straight forward approach to solving a problem
   - Systematic try all possible solutions until the correct solution is found
