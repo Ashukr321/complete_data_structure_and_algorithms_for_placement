@@ -46,3 +46,5 @@ int main()
 
   return 0;
 }
+
+// time complexity of the bubble sort is 0(n^2);
