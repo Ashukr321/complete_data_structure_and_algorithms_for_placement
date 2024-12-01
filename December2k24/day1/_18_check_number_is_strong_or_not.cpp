@@ -11,6 +11,7 @@ int getFactorial(int n)
   }
   return n * getFactorial(n - 1);
 }
+
 // check the number is strong number
 bool isStrongNumber(int num)
 {
@@ -24,6 +25,7 @@ bool isStrongNumber(int num)
   }
   return sum == temp;
 }
+
 // main start here ...
 int main()
 {
