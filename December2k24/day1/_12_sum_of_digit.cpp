@@ -21,7 +21,6 @@ int main()
   cout << "Enter your number :" << endl;
   cin >> num;
   cout << "The sum of digit is :";
- cout<< sumOfDigit(num)<<endl;
-
+  cout<< sumOfDigit(num)<<endl;
   return 0;
 }
