@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/November_30_days_2k24/day18",
-      "program": "c:/Users/Ashutosh kumar/OneDrive/Desktop/complete_data_structure_and_algorithms_for_placement/November_30_days_2k24/day18/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
