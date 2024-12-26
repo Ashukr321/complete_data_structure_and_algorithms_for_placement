@@ -3,13 +3,16 @@
 # Tree
 ## ==Types of Tree==
 - Binary Tree
-  1. Full binary tree 
-  2. Complete binary tree
-  3. Perfect binary tree
+  - maximum 1 0 2 subtree 
+  1. Full binary tree  (either 2 children or 0 children)
+  2. Complete binary tree  
+  3. Perfect binary tree (ALL level has 2^n children , n = level)
   4. Degenerate tree
 
 - *==Binary Search Tree==*
   - Rules of BST 
+    - left subtree  value less than node value
+    - right subtree greater  than node value
   - Operations 
     - Insert in Binary search tree. tc =(O logn)
     - Search in Binary Search tree. tc = (O logn)
@@ -55,7 +58,13 @@
 - Ancestor
 - Descendant
 - Internal Node
-
+- Degree of Node
+- Degree of Tree
+- Terminal Node
+- Non Terminal Node(Internal Node)
+- Level of Node
+- Path 
+- Forest
 ## Representation of a Tree
 - [Tree representation](https://media.geeksforgeeks.org/wp-content/uploads/20240424125622/Introduction-to-tree-.webp)
 - [Structure of the tree Node ]()
