@@ -22,7 +22,24 @@
     - Delete in Binary Search tree
 - Balanced binary tree
     - Avl Tree 
+      - type of self balancing binary search tree
+      - must be  satisfied the bst tree condition
+      - The balance factor can be -1, 0, or +1 
+      - balance factor = height of left subtree - height of right subtree
+      - Rotation
+        - LL Rotation
+        - RR Rotation
+        - LR Rotation
+        - RL Rotation
+
+
     - Red Black Tree 
+      - Node Color : 🚀 Either RED OR BLACK 
+      - Root Node is always BLACK
+      - Red Node can have only BLACK children
+      - Every path from root to leaf has same number of BLACK nodes
+      - No two RED nodes can be adjacent
+      - Leaf node is always BLACK
 - B Tree
   - Applications of B Tree
     1. Database
