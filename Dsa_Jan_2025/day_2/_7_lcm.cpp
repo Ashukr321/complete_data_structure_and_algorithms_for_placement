@@ -11,6 +11,7 @@ int hcf(int a, int b)
   }
   return hcf(b, a % b);
 }
+
 int lcm(int a, int b)
 {
   return (a * b) / hcf(a, b);
