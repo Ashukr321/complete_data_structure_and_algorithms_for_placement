@@ -46,6 +46,6 @@ int main()
   cout << "After sorting :" << endl;
   insertionSort(arr, size);
   printArray(arr, size);
-
+  
   return 0;
 }
