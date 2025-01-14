@@ -14,8 +14,8 @@ void freqArray(int arr[],int size){
   for(auto i = freqMap.begin(); i!=freqMap.end();i++){
     cout<<"The frequency of "<<i->first<<" is : "<<i->second<<endl;
   }
-
 }
+
 //main start here ...
 int main(){
   int size;
