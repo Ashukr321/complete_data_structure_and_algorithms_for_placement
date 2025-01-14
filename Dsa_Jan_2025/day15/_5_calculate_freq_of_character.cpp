@@ -20,6 +20,5 @@ int main(){
   cout<<"Enter your string "<<endl;
   cin>>str;
   calculate_freq(str);
-
   return 0;
 }
