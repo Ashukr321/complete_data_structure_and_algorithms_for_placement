@@ -14,6 +14,7 @@ void printNum(int n)
 }
 // main start here ...
 int main()
+
 {
   int n;
   cout << "Enter the " << endl;
