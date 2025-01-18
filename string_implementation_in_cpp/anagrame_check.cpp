@@ -13,6 +13,7 @@ bool anagram(string str1, string str2)
       filterString1 += tolower(c);
     }
   }
+  
   for (char c : str2)
   {
     if (isalnum(c))
