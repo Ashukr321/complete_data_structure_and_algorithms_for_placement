@@ -77,7 +77,30 @@ int getSizeTree(Node *root)
   }
   int leftsize = getSizeTree(root->left);
   int rightsize = getSizeTree(root->right);
-  return 1+leftsize+rightsize;
+  return 1 + leftsize + rightsize;
+}
+
+int maxOfNode(Node *root)
+{
+  // base case
+  if (root == nullptr)
+  {
+    return 0;
+  }
+  int max = root->data;
+  int leftMax = maxOfNode(root->left);
+  if (leftMax > max)
+  {
+    max = leftMax;
+  }
+
+  int rightMax = maxOfNode(root->right);
+  if (rightMax > max)
+  {
+    max = rightMax;
+  }
+
+  return max;
 }
 
 // main start here ...
@@ -93,8 +116,8 @@ int main()
   insertNodeRight(root, 50);
   insertNodeLeft(root, 60);
   inorderTraversal(root);
-  cout<<endl;
+  cout << endl;
   cout << "getsize of the node " << getSizeTree(root) << endl;
-
+  cout << "Maximum node " << maxOfNode(root) << endl;
   return 0;
 }
