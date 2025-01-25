@@ -12,45 +12,43 @@ void printArray(int arr[], int size)
   cout << endl;
 }
 
-
-void bubbleSort(int arr[], int size)
+void selectionSort(int arr[], int size)
 {
-  for (int i = 0; i < size - 1; i++)
+  for (int i = 0; i < size; i++)
   {
-    for (int j = 0; j < size - 1 - i; j++)
+    int minIndex = i;
+    for (int j = i + 1; j < size; j++)
     {
-      if (arr[j] > arr[j + 1])
+      if (arr[j] < arr[minIndex])
       {
-        swap(arr[j], arr[j + 1]);
+        minIndex = j;
       }
     }
+    swap(arr[minIndex], arr[i]);
   }
 }
-
-
 
 // main start here ...
 int main()
 {
-
   int size;
   cout << "Enter the size of the array: ";
   cin >> size;
   int arr[size];
-
   for (int i = 0; i < size; i++)
   {
     int n;
-    cout << "Enter the element at index:" << i << endl;
+    cout << "Enter the element at index : " << i << endl;
     cin >> n;
     arr[i] = n;
   }
 
-  cout << "before bubble sort " << endl;
+  cout << "Before selection sort" << endl;
   printArray(arr, size);
-  cout << endl;
-  cout << "After bubble sort " << endl;
-  bubbleSort(arr, size);
+
+  cout << "After selection sort " << endl;
+  // selection sort
+  selectionSort(arr, size);
   printArray(arr, size);
 
   return 0;
