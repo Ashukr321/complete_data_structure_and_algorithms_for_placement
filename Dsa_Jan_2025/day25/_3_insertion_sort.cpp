@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 void printArray(int arr[], int size)
 {
   for (int i = 0; i < size; i++)
@@ -10,6 +11,7 @@ void printArray(int arr[], int size)
   }
   cout << endl;
 }
+
 
 void insertionSort(int arr[], int size)
 {
@@ -25,6 +27,8 @@ void insertionSort(int arr[], int size)
     arr[j + 1] = key;
   }
 }
+
+
 // main start here ...
 int main()
 {
