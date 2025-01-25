@@ -54,7 +54,7 @@ int main()
   cout << "Before quick sort the" << endl;
   printArray(arr, size);
   quickSort(arr, 0, size - 1);
-  cout << "After quick sort the" << endl;
+  cout << "After quick sort " << endl;
   printArray(arr,size);
   return 0;
 }
