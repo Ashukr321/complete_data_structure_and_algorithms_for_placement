@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+
 int productOfDigit(int num)
 {
   // base case
@@ -13,12 +14,14 @@ int productOfDigit(int num)
   // recursive call
   return digit * productOfDigit(num / 10);
 }
+
+
 // main start here ...
 int main()
 {
   int num;
   cout << "Enter your digit" << endl;
   cin >> num;
-  cout << "poduct of digit  " << productOfDigit(num) << endl;
+  cout << "product of digit  " << productOfDigit(num) << endl;
   return 0;
 }
